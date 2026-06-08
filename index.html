@@ -92,7 +92,7 @@
         }
 
         .hero-content {
-            max-width: 900px;
+            max-width: 650px;
             margin: 0 auto;
         }
 
@@ -183,17 +183,17 @@
         }
 
         .container-services {
-            max-width: 1050px; 
+            max-width: 1150px; 
             margin: 0 auto;
         }
 
         /* Agrupamento Visual dos Pilares */
         .pillar-group {
-            margin-bottom: 3.5rem;
+            margin-bottom: 4rem;
         }
 
         .pillar-group-header {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             border-bottom: 2px solid var(--gray-border);
             padding-bottom: 10px;
         }
@@ -216,7 +216,7 @@
 
         .pillars-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: 25px;
         }
 
@@ -228,6 +228,8 @@
             box-shadow: 0 5px 20px rgba(0,0,0,0.03);
             border-top: 6px solid var(--accent);
             transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .pillar-card:hover {
@@ -260,6 +262,46 @@
             border-left: 4px solid var(--accent);
             padding: 10px 15px;
             border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        /* Novas Classes Comerciais */
+        .commercial-impact {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: auto;
+            padding-top: 15px;
+            border-top: 1px dashed var(--gray-border);
+        }
+
+        .commercial-impact strong {
+            color: #005f99;
+            display: block;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+        }
+
+        .sales-pitch {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            font-style: italic;
+            border-left: 4px solid var(--accent);
+            line-height: 1.6;
+        }
+
+        .sales-pitch strong {
+            color: var(--accent);
+            font-style: normal;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
         }
 
         /* TABELA DE PREÇOS */
@@ -568,7 +610,7 @@
         <div class="container-services"> 
             <div class="section-title">
                 <h2>Nossos <span>Pilares de Atuação</span></h2>
-                <p>Soluções desenhadas para transformar dados e processos em excelência.</p>
+                <p>Soluções desenhadas para transformar dados e processos em excelência financeira e operacional.</p>
             </div>
             
             <!-- GRUPO 1: PILARES LUCRATIVOS -->
@@ -582,16 +624,22 @@
                         <h3>01. Indicadores Executivos Digitais</h3>
                         <div class="pain-point"><strong>A Dor:</strong> "Sua empresa possui ausência de indicadores com governança."</div>
                         <div class="solution-point"><strong>Entrega:</strong> Indicadores digitais com acuracidade.</div>
+                        <div class="commercial-impact"><strong>Impacto Financeiro</strong> Fim do "achismo" na diretoria. Redução drástica do tempo gasto consolidando dados e visibilidade imediata de gargalos com status de farol.</div>
+                        <div class="sales-pitch"><strong>Nossa Visão</strong> "Quantas horas sua equipe perde apenas para descobrir o que aconteceu no mês passado? Nós transformamos o retrovisor da sua empresa em um painel de controle em tempo real."</div>
                     </div>
                     <div class="pillar-card">
                         <h3>02. Aceleração do CRM</h3>
                         <div class="pain-point"><strong>A Dor:</strong> "Descontrole dos leads com perde vendas por falha operacional."</div>
                         <div class="solution-point"><strong>Entrega:</strong> Controle no funil de oportunidades.</div>
+                        <div class="commercial-impact"><strong>Impacto Financeiro</strong> Aumento imediato da taxa de conversão. Impede que negócios de alto valor esfriem por falta de follow-up na ponta.</div>
+                        <div class="sales-pitch"><strong>Nossa Visão</strong> "O cliente que chega até a loja já custou dinheiro. Quando a equipe perde um lead por desorganização, você está financiando o crescimento do seu concorrente."</div>
                     </div>
                     <div class="pillar-card">
                         <h3>03. Gerenciamento de Pedidos</h3>
                         <div class="pain-point"><strong>A Dor:</strong> "Dificuldade de gerenciar a carteira de pedidos e fluxo financeiro."</div>
                         <div class="solution-point"><strong>Entrega:</strong> Equilíbrio na gestão de pedidos vs demanda.</div>
+                        <div class="commercial-impact"><strong>Impacto Financeiro</strong> Previsibilidade de fluxo de caixa e redução do ciclo de faturamento, alinhando a venda com a capacidade real de entrega.</div>
+                        <div class="sales-pitch"><strong>Nossa Visão</strong> "Vender muito e entregar mal destrói a margem. Nós equilibramos a sua carteira para garantir que o que foi prometido seja entregue sem estourar custos operacionais."</div>
                     </div>
                 </div>
             </div>
@@ -605,18 +653,24 @@
                 <div class="pillars-grid">
                     <div class="pillar-card">
                         <h3>04. Gestão Operacional para PME</h3>
-                        <div class="pain-point"><strong>A Dor:</strong> "Sua empresa cresce, mas a operação está em planilhas caóticas com indicadores sem confiabilidade."</div>
-                        <div class="solution-point"><strong>Entrega:</strong> Implantação de Gestão Operacional Inteligente com organização da rotina.</div>
+                        <div class="pain-point"><strong>A Dor:</strong> "Sua empresa cresce, mas a operação está em planilhas caóticas."</div>
+                        <div class="solution-point"><strong>Entrega:</strong> Implantação de Gestão Operacional com organização da rotina.</div>
+                        <div class="commercial-impact"><strong>Impacto Financeiro</strong> Escalabilidade segura. Prepara a infraestrutura para dobrar de tamanho sem dobrar o número de funcionários ou perder o controle.</div>
+                        <div class="sales-pitch"><strong>Nossa Visão</strong> "O modelo que trouxe a sua empresa até aqui não é o que vai levá-la ao próximo nível. Implementamos processos que funcionam independente de quem estiver operando."</div>
                     </div>
                     <div class="pillar-card">
                         <h3>05. Implantação de S&OP</h3>
                         <div class="pain-point"><strong>A Dor:</strong> "Sua empresa vende sem previsão e análise de demanda."</div>
                         <div class="solution-point"><strong>Entrega:</strong> Planejamento Integrado de Demanda e Operação.</div>
+                        <div class="commercial-impact"><strong>Impacto Financeiro</strong> Liberação de capital de giro. Acaba com o dinheiro travado em estoque obsoleto e elimina o desabastecimento de itens críticos na oficina.</div>
+                        <div class="sales-pitch"><strong>Nossa Visão</strong> "Se as vendas aceleram, mas a oficina não acompanha, sua margem é corroída. Sincronizamos sua demanda com a capacidade, garantindo a peça certa na hora certa."</div>
                     </div>
                     <div class="pillar-card">
                         <h3>06. Integração ERP</h3>
                         <div class="pain-point"><strong>A Dor:</strong> "Sua informação não é conectada de forma interdepartamental."</div>
-                        <div class="solution-point"><strong>Entrega:</strong> Estruturação de workflows que padronizam dados com governança.</div>
+                        <div class="solution-point"><strong>Entrega:</strong> Workflows que padronizam dados com governança.</div>
+                        <div class="commercial-impact"><strong>Impacto Financeiro</strong> Eliminação de retrabalho, redução de custos invisíveis por erros manuais e garantia de conformidade (compliance) dos dados.</div>
+                        <div class="sales-pitch"><strong>Nossa Visão</strong> "Departamentos que não conversam custam caro. Quando a equipe usa sistemas diferentes e o papel, a empresa sangra eficiência. Nós criamos a ponte."</div>
                     </div>
                 </div>
             </div>
@@ -631,17 +685,23 @@
                     <div class="pillar-card">
                         <h3>07. Estudo de Mercado Regional</h3>
                         <div class="pain-point"><strong>A Dor:</strong> "Sua empresa não estuda os concorrentes."</div>
-                        <div class="solution-point"><strong>Entrega:</strong> Indicadores e conteúdos macroeconômicos que aceleram a tomada de decisão.</div>
+                        <div class="solution-point"><strong>Entrega:</strong> Indicadores macroeconômicos para tomada de decisão.</div>
+                        <div class="commercial-impact"><strong>Impacto Financeiro</strong> Antecipação de tendências e proteção contra oscilações do setor. Permite mapear a idade e potência da frota para atacar nichos ignorados.</div>
+                        <div class="sales-pitch"><strong>Nossa Visão</strong> "O mercado não perdoa quem dirige olhando apenas para o próprio painel. Entender as flutuações permite movimentos táticos antes da concorrência."</div>
                     </div>
                     <div class="pillar-card">
                         <h3>08. Marcas e Comunicação</h3>
                         <div class="pain-point"><strong>A Dor:</strong> "Sua empresa precisa de visibilidade e credibilidade."</div>
                         <div class="solution-point"><strong>Entrega:</strong> Gerenciamento de campanhas e controle da taxa de retorno.</div>
+                        <div class="commercial-impact"><strong>Impacto Financeiro</strong> Posicionamento de autoridade e atração de clientes mais qualificados, reduzindo o Custo de Aquisição de Clientes (CAC).</div>
+                        <div class="sales-pitch"><strong>Nossa Visão</strong> "Não basta ser a melhor operação se o cliente não enxerga isso. Estruturamos comunicação baseada em dados, focada em atrair o decisor e gerar ROI claro."</div>
                     </div>
                     <div class="pillar-card">
                         <h3>09. Negócios e Gestão</h3>
-                        <div class="pain-point"><strong>A Dor:</strong> "Sua empresa demanda maturidade operacional e planejamento estratégico."</div>
-                        <div class="solution-point"><strong>Entrega:</strong> Planos de desenvolvimento e capacitação focados na retenção de talentos.</div>
+                        <div class="pain-point"><strong>A Dor:</strong> "Sua empresa demanda maturidade e planejamento estratégico."</div>
+                        <div class="solution-point"><strong>Entrega:</strong> Planos focados na retenção e desenvolvimento de talentos.</div>
+                        <div class="commercial-impact"><strong>Impacto Financeiro</strong> Redução de turnover de talentos críticos (como mecânicos de alta performance) e criação de cultura focada em metas de longo prazo.</div>
+                        <div class="sales-pitch"><strong>Nossa Visão</strong> "Estratégias brilhantes falham se a equipe não tem maturidade. Desenvolvemos sua liderança para serem guardiões da rentabilidade, e não apenas executores."</div>
                     </div>
                 </div>
             </div>
